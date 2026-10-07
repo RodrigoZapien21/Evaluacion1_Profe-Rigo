@@ -6,25 +6,22 @@ class Alojamiento:
         self.precio = precio
         self.capacidad = capacidad
 
+# 1. mostrar_info()
+
     def mostrar_info(self):
         # COMPLETAR
         return f'{self.nombre} ({self.tipo}) -- Precio: {self.precio:,.2f} -- Capacidad: {self.capacidad} personas'
 
 
-    # Debe devolver (no imprimir) una cadena de texto con la información
-    # del alojamiento, en un formato legible y consistente.
-    # El precio debe verse como moneda y la capacidad como número de personas.
+ # 2. precio_por_persona()
 
     def precio_por_persona(self):
         # COMPLETAR
-        pass
+        if self.precio <= 0 or self.capacidad <= 0:
+            return None
+        return round(self.precio/self.capacidad, 2)
 
-    # 2. precio_por_persona()
-
-    # Debe devolver el precio que corresponde pagar por persona.
-    # Si precio o capacidad no son válidos (capacidad o precio <= 0), 
-    # no debe lanzar error: debe devolver None.
-    # El resultado debe estar redondeado a 2 decimales.
+   
 
 
 # Objeto 1
