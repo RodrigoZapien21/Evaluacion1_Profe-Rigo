@@ -17,9 +17,9 @@ class Alojamiento:
 
     def precio_por_persona(self):
         # COMPLETAR
-        if self.precio <= 0 or self.capacidad <= 0:
+        if self.precio <= 0 or self.capacidad <= 0: #Se establece la condicional para valores de 'precio' o 'capacidad'
             return None
-        return f'El precio por persona es de: ${round(self.precio / self.capacidad, 2):,.2f}'
+        return f'El precio por persona es de: ${round(self.precio / self.capacidad, 2):,.2f}' #Se obtiene el precio por persona redondeado a dos decimales 
 
    
 # Objeto 1
