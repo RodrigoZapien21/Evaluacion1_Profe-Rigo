@@ -10,7 +10,7 @@ class Alojamiento:
 
     def mostrar_info(self):
         # COMPLETAR
-        return f'{self.nombre} ({self.tipo}) -- Precio: {self.precio:,.2f} -- Capacidad: {self.capacidad} personas'
+        return f'{self.nombre} ({self.tipo}) -- Precio: ${self.precio:,.2f} -- Capacidad: {self.capacidad} personas'
 
 
  # 2. precio_por_persona()
@@ -19,7 +19,7 @@ class Alojamiento:
         # COMPLETAR
         if self.precio <= 0 or self.capacidad <= 0:
             return None
-        return f'El precio por persona es de: {round(self.precio / self.capacidad, 2)}'
+        return f'El precio por persona es de: ${round(self.precio / self.capacidad, 2):,.2f}'
 
    
 # Objeto 1
