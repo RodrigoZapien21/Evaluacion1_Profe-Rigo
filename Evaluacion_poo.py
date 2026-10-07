@@ -19,7 +19,7 @@ class Alojamiento:
         # COMPLETAR
         if self.precio <= 0 or self.capacidad <= 0:
             return None
-        return round(self.precio/self.capacidad, 2)
+        return f'El precio por persona es de: {round(self.precio / self.capacidad, 2)}'
 
    
 # Objeto 1
